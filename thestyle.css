@@ -135,3 +135,23 @@ hr {
 	height: 150px;
 	width: 150px;
 }
+
+.projectPageTitle {
+	font-size: 80px;
+}
+
+.projectPageFlexRow {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.githubmark {
+	width: 120px;
+	height: 120px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
