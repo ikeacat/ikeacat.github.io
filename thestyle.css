@@ -1,0 +1,137 @@
+.bigtitle {
+	font-size: 40px;
+}
+
+.robotoBlack {
+	font-family: "Roboto", sans-serif;
+}
+
+#titlebar {
+	top: -60px;
+	position: relative;
+	display: flex;
+	flex-direction: row-reverse !important;
+	height: 50px;
+}
+
+.tb-space {
+	margin: 20px;
+}
+
+.robotoFont {
+	font-family: "Roboto", sans-serif;
+}
+
+.neubutton {
+	background-color: red;
+	color: white;
+	border-color:transparent;
+	padding: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 50px;
+	transition: all 0.3s ease 0s;
+}
+
+.neubutton:hover {
+	background-color: greenyellow;
+}
+
+.neubutton:active {
+	background-color: green;
+}
+
+.topnavdiv {
+	margin: 0;
+	border: 3px solid black; /* Use Black if they cant use the animation. */
+	border-radius: 5px;
+}
+
+.topnav {
+	display: flex;
+	align-items: flex-end;
+	justify-content: right;
+	width: 98%;
+	position: absolute;
+	top: 25px;
+}
+
+.ikeacattitle {
+	position: static;
+}
+
+.projects {
+	position: relative;
+}
+
+.projectstitle {
+	font-size: 60px;
+}
+
+.projectItem {
+	border: 1px solid black;
+	background-color: #a0b7bd;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	font-size: 30px;
+	height: 40px;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.projectItemSmallPic {
+	width: 40px;
+	height: 40px;
+	position: relative;
+}
+
+hr {
+	animation: borderColorAni 10s infinite;
+}
+
+@keyframes borderColorAni {
+	0% {border-color: red;}
+	20% {border-color: orange;}
+	40% {border-color: yellow;}
+	60% {border-color: lightgreen;}
+	80% {border-color: blue;}
+	95% {border-color: purple;}
+	100% {border-color: red;}
+}
+
+.textSpacePicture {
+	left: 8px;
+	position: relative;
+}
+
+.bigtitle {
+	font-size: 100px;
+	position: relative;
+	left: 20px;
+}
+
+#title {
+	background-color: #00025e;
+	position: relative;
+	margin-top: 0px;
+	display: flex;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	border: transparent;
+	flex-direction: column;
+}
+
+.imgNameComposite {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+#profilepic {
+	border-radius: 100%;
+	height: 150px;
+	width: 150px;
+}
