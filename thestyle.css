@@ -179,3 +179,15 @@ body {
 	overflow-x: hidden;
 	overflow-y: scroll;
 }
+
+.flexsocials {
+	display: flex;
+	align-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+.socialgithub {
+	height: 100px;
+}

@@ -1,7 +1,11 @@
 function toProjects() {
-    window.location = "#projects"
+    window.location = "#projects";
 }
 
 function toHomepage() {
-    window.location = "../index.html"
+    window.location = "../index.html";
+}
+
+function toSocials() {
+    window.location = '#socials';
 }
