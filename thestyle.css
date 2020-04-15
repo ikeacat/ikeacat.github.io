@@ -192,3 +192,22 @@ body {
 .socialgithub {
 	height: 100px;
 }
+
+.projectImages {
+	width: 500px;
+	margin-left: 15px;
+	border: 5px solid white;
+	animation: borderColorAni 10s infinite;
+	border-radius: 20px;
+	margin-bottom: 10px;
+}
+
+.imagesRow {
+	margin-bottom: 20px;
+	flex-wrap: wrap;
+}
+
+.githubPagesMark {
+	width: 400px;
+	margin-left: 10px;
+}
