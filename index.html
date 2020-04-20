@@ -6,8 +6,9 @@
 		<title>ikeacat.</title>
 		<link rel="icon" href='favicon.ico' type='image/ico'>
 	</head>
-	<body class="robotoFont">
+	<body class="robotoFont" onload='headlineGetter(0)'>
 		<script src="ikea.js"></script>
+		<script src='headselect.js'></script>
 		<div class="topbar">
 			<h1 class="ikeacattitle">ikeacat.</h1>
 			<div class="topnav">
@@ -20,7 +21,7 @@
 		<div id='title'>
 
 			<div class='imgNameComposite'><img src='pics/profilepic.jpg' id='profilepic'><h1 class='bigtitle'>ikeacat.</h1></div>
-			<h2>idk either.</h2>
+			<h2 id='randomHeadline'></h2>
 		</div>
 		<hr class="topnavdiv">
 		<a name="projects"></a>
