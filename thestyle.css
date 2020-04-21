@@ -232,3 +232,26 @@ body {
 	height: 40px !important;
 	margin-right: inherit !important;
 }
+
+.dot {
+	border-radius: 100%;
+	height: 20px;
+	width: 20px;
+	margin-left: auto;
+	margin-right: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.reddot { /* Development Final */
+	background-color: red;
+}
+.greendot { /* Development In Progress */
+	background-color: #44ff00;
+}
+.yellowdot { /* Development Paused */
+	background-color: yellow;
+}
+
+.filteredOut {
+	display: none !important;
+}
