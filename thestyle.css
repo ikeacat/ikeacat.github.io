@@ -63,7 +63,22 @@
 
 .projects {
 	position: relative;
+	transition: all 2.5s ease 2s;
 }
+/*
+.projects.hide {
+	animation: makesmall 2s;
+	animation-iteration-count: 1;
+}
+.projects.stayHidden {
+	width: 0px !important;
+}
+
+@keyframes makesmall {
+	0% {width: initial;}
+	100% {width: 0px !important;}
+}
+*/
 
 .projectstitle {
 	font-size: 60px;
@@ -82,6 +97,7 @@
 	animation: borderColorAni 10s infinite;
 	padding-left: 20px;
 	border-radius: 15px;
+	transition: all 1s ease-in-out 0s;
 }
 
 .projectItemSmallPic {
@@ -254,4 +270,21 @@ body {
 
 .filteredOut {
 	display: none !important;
+}
+
+.the404title {
+	font-size: 160px !important;
+	margin-bottom: 5px;
+	margin-top: 15px;
+}
+
+.the404centerflex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.noOverflow {
+	overflow-y: auto !important;
 }
