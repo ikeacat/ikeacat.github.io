@@ -116,6 +116,8 @@
 	background-color: #ffffff;
 	transition: box-shadow 0.1s linear;
 	text-decoration: none !important;
+	margin-right: 15px;
+	margin-bottom: 15px;
 }
 .projectItem:hover {
 	box-shadow:  5px 5px 10px #d9d9d9, 
