@@ -83,6 +83,9 @@
 .projectstitle {
 	font-size: 60px;
 }
+.projectstitle.bigger {
+	font-size: 100px !important;
+}
 /* Old way to present a project item.
 .projectItem {
 	border: 4px solid black;
