@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap');
+
 .bigtitle {
 	font-size: 40px;
 }
@@ -59,6 +61,7 @@
 
 .ikeacattitle {
 	position: static;
+	font-family: "Inconsolata", sans-serif;
 }
 
 .projects {
@@ -157,6 +160,7 @@ hr {
 	font-size: 100px;
 	position: relative;
 	left: 20px;
+	font-family: "Inconsolata", sans-serif;
 }
 
 #title {
