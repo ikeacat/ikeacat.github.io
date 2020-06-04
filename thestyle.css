@@ -48,7 +48,6 @@
 .neubutton { /* Adapted from projectItem */
 	border: 1px solid lightgray;
 	border-radius: 20px;
-	overflow: hidden;
 	font-family: "Roboto", sans-serif;
 	position: relative;
 	background-color: #ffffff;
