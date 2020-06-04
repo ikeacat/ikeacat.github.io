@@ -23,7 +23,7 @@
 .robotoFont {
 	font-family: "Roboto", sans-serif;
 }
-
+/* Old button
 .neubutton {
 	background-color: red;
 	color: white;
@@ -42,6 +42,28 @@
 
 .neubutton:active {
 	background-color: green;
+}
+*/
+
+.neubutton { /* Adapted from projectItem */
+	border: 1px solid lightgray;
+	border-radius: 20px;
+	overflow: hidden;
+	font-family: "Roboto", sans-serif;
+	position: relative;
+	background-color: #ffffff;
+	transition: box-shadow 0.1s linear;
+	text-decoration: none !important;
+	padding: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 50px;
+	margin-right: 10px;
+}
+.neubutton:hover {
+	box-shadow:  5px 5px 10px #d9d9d9, 
+			 -5px -5px 10px #ffffff;
+	cursor: pointer;
 }
 
 .topnavdiv {
