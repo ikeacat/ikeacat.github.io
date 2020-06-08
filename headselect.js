@@ -2,10 +2,11 @@ var headlines = new Array;
 headlines[0] = "idk either.";
 headlines[1] = "mhm.";
 headlines[2] = "ope.";
+headlines[3] = "i dont care.";
 
 function headlineGetter(headoverride) {
     if(headoverride == null) {
-        var flooredNum = Math.floor( Math.random() * 3);
+        var flooredNum = Math.floor( Math.random() * 4);
         var arrayWFlooredNum = headlines[flooredNum];
         document.getElementById("randomHeadline").innerHTML = arrayWFlooredNum;
     } else {
