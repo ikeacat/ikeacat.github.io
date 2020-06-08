@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap');
 
+@font-face {
+	font-family: "SanFranciscoBlack";
+	src: url("fonts/SF-Pro-Display-Black.otf");
+}
+
+@font-face {
+	font-family: "SanFrancisco";
+	src: url("fonts/SF-Pro-Display-Regular.otf");
+}
 .bigtitle {
 	font-size: 40px;
 }
@@ -21,7 +30,7 @@
 }
 
 .robotoFont {
-	font-family: "Roboto", sans-serif;
+	font-family: "SanFrancisco" ,"Roboto", sans-serif;
 }
 /* Old button
 .neubutton {
@@ -106,6 +115,7 @@
 
 .projectstitle {
 	font-size: 60px;
+	font-family: "SanFranciscoBlack", "Roboto", sans-serif;
 }
 .projectstitle.bigger {
 	font-size: 100px !important;
@@ -232,6 +242,7 @@ hr {
 
 .projectPageTitle {
 	font-size: 80px;
+	font-family: "SanFranciscoBlack", "Roboto", sans-serif;
 }
 
 .projectPageFlexRow {
@@ -365,4 +376,8 @@ body {
 
 .projectDesc {
 	color: #586069;
+}
+
+.SanFranciscoBlack {
+	font-family: "SanFranciscoBlack", "Roboto", sans-serif;
 }
