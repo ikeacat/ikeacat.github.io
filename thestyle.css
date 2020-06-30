@@ -366,3 +366,30 @@ body {
 .projectDesc {
 	color: #586069;
 }
+
+.lang {
+	font-family: "Roboto", "Helvetica", "Ariel", sans-serif;
+	margin-bottom: 5px;
+	position: static;
+	display: inline-block;
+	font-size: 40px;
+}
+.lang.javascript {
+	background-color: #f0db4f;
+}
+.lang.css {
+	background-color: #2965f1;
+}
+.lang.html {
+	background-color: #F16529
+}
+.lang.python {
+	background-color: #306998;
+}
+.lang.swift {
+	background-color: #ffac45;
+}
+
+.langrow {
+	display: inline-block;
+}
