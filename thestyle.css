@@ -400,10 +400,28 @@ body {
 .lang.swift {
 	background-color: #ffac45;
 }
+.lang.block {
+	width: 24px;
+	height: 24px;
+	border: none;
+}
+.lang.hsml.first {
+	margin-left: 10px;
+}
+.lang.hsml.notfirst {
+	margin-left: 5px;
+}
 
 .langrow {
 	display: inline-block;
 }
+
 .SanFranciscoBlack {
 	font-family: "SanFranciscoBlack", "Roboto", sans-serif;
+}
+
+.indicator-lang-row {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
 }
