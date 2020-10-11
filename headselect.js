@@ -10,7 +10,7 @@ function headlineGetter(headoverride) {
         var arrayWFlooredNum = headlines[flooredNum];
         document.getElementById("randomHeadline").innerHTML = arrayWFlooredNum;
     } else {
-        if(headoverride <= 2) {
+        if(headoverride <= 3) {
             var x = headlines[headoverride];
             document.getElementById("randomHeadline").innerHTML = x;
         } else {
