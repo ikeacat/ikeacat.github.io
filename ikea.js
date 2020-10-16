@@ -43,6 +43,7 @@ window.onload = function() {
             //console.log(rgbInserter);
             //console.log(colorsdict);
             document.getElementById("projbgcolor").setAttribute("style", rgbInserter)
+            headlineGetter()
         } else if(projectType == "tagDoesNotExist") {
             console.warn("Consider making an 'igi-pagetype' meta tag :)")
             headlineGetter()
