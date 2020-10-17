@@ -5,10 +5,11 @@
         <link href="../thestyle.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
         <link rel="icon" href='../favicon.ico' type='image/ico'>
+        <meta name='igi-pagetype' content='project'>
     </head>
-    <body class='robotoFont' onload='headlineGetter()'>
-        <script src="../ikea.js"></script>
-        <script src='../headselect.js'></script>
+    <body class='robotoFont'>
+        <script defer src="../ikea.js"></script>
+        <script defer src='../headselect.js'></script>
         <div class="topbar">
 			<h1 class="ikeacattitle">ikeacat.</h1>
 			<div class="topnav">
@@ -16,30 +17,27 @@
 			</div>
 			<hr class="topnavdiv">
         </div>
-        <div class='bgimg'></div>
+        <div class='bgimg solidcolor' id='projbgcolor'></div>
         <div id='title'>
-			<div class='imgNameComposite'><img src='../pics/profilepic.jpg' id='profilepic'><h1 class='bigtitle'>ikeacat.</h1></div>
+			<div class='imgNameComposite'><img src='../pics/SCPBlack.svg' id='profilepic' style='height:200px;'><h1 class='bigtitle'>SCPAccess</h1></div>
 			<h2 id='randomHeadline'></h2>
         </div>
         <hr class='topnavdiv'>
-        <div class='projectPageFlexRow'>
-            <img src='../pics/SCPBlack.svg' style='height: 200px'/>
-            <h1 class='projectPageTitle'>SCPAccess</h1><br>
-        </div>
-        <hr class='topnavdiv'>
-        <h1>About</h1>
+        <h1 class='projectSubheads'>About</h1>
         <h3>Project Status: In Progress</h3>
         <h3>Description: An iOS app that provides easy documentation to iPhone users.</h3>
-        <p>This is what the app looks like in Light and Dark mode.</p>
+        <hr class='topnavdiv'>
+        <h1 class='projectSubheads'>Media</h1>
+        <p>This is what the app looks like in <a href='https://www.youtube.com/watch?v=1mb7bgExdHA' class='obviousLink'>Light</a> and <a href='https://www.youtube.com/watch?v=go6lFJayUKY' class='obviousLink'>Dark</a> mode.</p>
         <div>
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1mb7bgExdHA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/go6lFJayUKY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <hr class='topnavdiv'>
-        <h1>Languages</h1>
+        <h1 class='projectSubheads'>Languages</h1>
             <span class='lang swift'>Swift 5</span>
         <hr class='topnavdiv'>
-        <h1>External Links</h1>
+        <h1 class='projectSubheads'>External Links</h1>
         <a href='https://github.com/ikeacat/SCPAccess'><img src='../pics/GitHub-Mark.png' class='githubmark'/></a>
         <br><br>
         <hr class='topnavdiv'>
