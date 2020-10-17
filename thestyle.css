@@ -437,3 +437,8 @@ body {
 	text-decoration-style: double;
 	text-decoration-thickness: 2px;
 }
+
+.obviousLink {
+	color: blue;
+	text-decoration: underline;
+}
