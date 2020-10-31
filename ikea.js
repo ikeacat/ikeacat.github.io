@@ -51,4 +51,15 @@ window.onload = function() {
             headlineGetter(0)
         }
     }
+
+    try {
+        var defunct = document.head.querySelector("meta[name='igi-defunctPage']").getAttribute("content");
+    } catch (TypeError) {
+        console.log("Alright this isnt a defunct page.");
+        defunct = "NO"
+    } finally {
+        if(defunct == "YES") {
+            window.location = "../404.html"
+        }
+    }
 }
