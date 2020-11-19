@@ -44,6 +44,18 @@ window.onload = function() {
             //console.log(colorsdict);
             document.getElementById("projbgcolor").setAttribute("style", rgbInserter)
             headlineGetter()
+            try {
+                var projName = document.head.querySelector("meta[name='igi-name']").getAttribute("content")
+            } catch (TypeError) {
+                console.error("No 'igi-name' meta tag specified! Ignore if this isnt a project page.")
+                projName = "IGNOREFETCH"
+            } finally {
+                if(projName != "IGNOREFETCH") {
+                    fetch('https://ikeacat.github.io/json/projstats.json')
+                    .then(response => response.json())
+                    .then(data => console.log(data))
+                }
+            }
         } else if(projectType == "tagDoesNotExist") {
             console.warn("Consider making an 'igi-pagetype' meta tag :)")
             headlineGetter()
