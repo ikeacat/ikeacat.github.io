@@ -1,0 +1,30 @@
+[
+    {
+        "project": "Crawler",
+        "status": "Paused"
+    },
+    {
+        "project": "DuelBot",
+        "status": "Paused"
+    },
+    {
+        "project": "ikeacat.github.io",
+        "status": "In Progress"
+    },
+    {
+        "project": "Lemonade Stand",
+        "status": "Paused"
+    },
+    {
+        "project": "PyHack",
+        "status": "Paused"
+    },
+    {
+        "project": "SCPAccess",
+        "status": "Paused"
+    },
+    {
+        "project": "Sloth Team",
+        "status": "Discontinued"
+    }
+]
