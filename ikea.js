@@ -53,7 +53,24 @@ window.onload = function() {
                 if(projName != "IGNOREFETCH") {
                     fetch('https://ikeacat.github.io/json/projstats.json')
                     .then(response => response.json())
-                    .then(data => console.log(data))
+                    .then(data => {
+                        console.log(data)
+                        for(var i = 0; i <= data.length - 1; i++) {
+                            if(data[i].project == projName) {
+                                console.log("We found the project status")
+                                var shouldSet;
+                                if(data[i].status == "Discontinued") {
+                                    shouldSet = "Final (Discontinued)"
+                                } else {
+                                    shouldSet = data[i].status
+                                }
+                                document.getElementById("ps").innerHTML += shouldSet
+                            }
+                        }
+                    })
+
+                } else {
+                    document.getElementById("ps").innerHTML += "Could not fetch."
                 }
             }
         } else if(projectType == "tagDoesNotExist") {
