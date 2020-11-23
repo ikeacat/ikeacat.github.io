@@ -55,7 +55,7 @@ window.onload = function() {
     try {
         var defunct = document.head.querySelector("meta[name='igi-defunctPage']").getAttribute("content");
     } catch (TypeError) {
-        console.log("Alright this isnt a defunct page.");
+        //console.log("Alright this isnt a defunct page.");
         defunct = "NO"
     } finally {
         if(defunct == "YES") {
