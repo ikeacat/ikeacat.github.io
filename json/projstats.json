@@ -1,6 +1,9 @@
 [
     {
         "project": "Crawler",
-        "status": "Paused"
+        "description": "A game about crime 'n stuff.",
+        "status": "Paused",
+        "pagePath": "/projects/Crawler.html",
+        "languages": ["html", "css", "js"]
     }
 ]
