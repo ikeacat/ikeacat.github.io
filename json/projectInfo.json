@@ -23,11 +23,13 @@
         "externalLinks": [
             {
                 "image": "/pics/GitHub-Mark.png",
-                "href": "https://github.com/ikeacat/crawler"
+                "href": "https://github.com/ikeacat/crawler",
+                "cssClass": ""
             },
             {
                 "image": "/pics/GithubPages.svg",
-                "href": "https://ikeacat.github.io/crawler"
+                "href": "https://ikeacat.github.io/crawler",
+                "cssClass": ""
             }
         ]
     }
