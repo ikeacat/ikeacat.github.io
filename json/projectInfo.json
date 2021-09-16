@@ -22,12 +22,12 @@
         ],
         "externalLinks": [
             {
-                "image": "[IMAGEROOT]/pics/GitHub-Mark.png",
+                "image": "[IMAGEROOT]GitHub-Mark.png",
                 "href": "https://github.com/ikeacat/crawler",
                 "cssClass": ""
             },
             {
-                "image": "[IMAGEROOT]/pics/GithubPages.svg",
+                "image": "[IMAGEROOT]GithubPages.svg",
                 "href": "https://ikeacat.github.io/crawler",
                 "cssClass": ""
             }
