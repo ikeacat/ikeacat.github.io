@@ -24,12 +24,12 @@
             {
                 "image": "pics/GitHub-Mark.png",
                 "href": "https://github.com/ikeacat/crawler",
-                "cssClass": ""
+                "cssClass": "githubmark"
             },
             {
                 "image": "pics/GithubPages.svg",
                 "href": "https://ikeacat.github.io/crawler",
-                "cssClass": ""
+                "cssClass": "githubPagesMark"
             }
         ]
     }
