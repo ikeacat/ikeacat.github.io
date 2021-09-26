@@ -233,6 +233,12 @@ hr {
 	width: 150px;
 }
 
+.profilepic {
+	border-radius: 100%;
+	height: 150px;
+	width: 150px;
+}
+
 .igiprojPP {
 	border-radius: 100%;
 	height: 150px;
@@ -342,6 +348,9 @@ body {
 .indicator.inprogress {
 	background-color: #44ff00;
 }
+.indicator.unknown {
+	background-color: lightslategray;
+}
 
 .filteredOut {
 	display: none !important;
@@ -441,4 +450,8 @@ body {
 .obviousLink {
 	color: blue;
 	text-decoration: underline;
+}
+
+.SCP-extraHeight {
+	height: 200px;
 }
