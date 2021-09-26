@@ -22,7 +22,7 @@ async function generatePage() {
 
     // Compare Project Name to each JSON block.
     jsonp.forEach(element => {
-        if (element["name"].toLowerCase() == projectName) {
+        if (element["name"].toLowerCase().replace(" ", "+") == projectName) {
             // Do DOM stuff.
             // Place title
             document.getElementsByClassName("bigtitle")[0].innerHTML = element["name"];
