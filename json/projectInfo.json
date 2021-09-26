@@ -32,5 +32,24 @@
                 "cssClass": "githubPagesMark"
             }
         ]
+    },
+    {
+        "name": "DuelBot",
+        "desc": "A Discord Bot where you can duel friends.",
+        "enabled": true,
+        "status": "paused",
+        "headerImage": {
+            "enabled": false,
+            "link": "",
+            "extraCSS": ""
+        },
+        "imagesRoot": "pics/duelbot/",
+        "images": [
+            "helpembed.PNG",
+            "duelembed.PNG"
+        ],
+        "languages": [
+            "javascript"
+        ]
     }
 ]
