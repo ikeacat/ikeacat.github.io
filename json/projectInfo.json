@@ -89,7 +89,7 @@
         "headerImage": {
             "enabled": false
         },
-        "imagesRoot": "pics/lemonadestand",
+        "imagesRoot": "pics/lemonadestand/",
         "images": [
             "homepage.png",
             "homescreen.png",
@@ -121,7 +121,7 @@
         "headerImage": {
             "enabled": false
         },
-        "imagesRoot": "pics/pyhack",
+        "imagesRoot": "pics/pyhack/",
         "images": [
             "homepage.png",
             "missions.png",
