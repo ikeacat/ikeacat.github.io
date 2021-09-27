@@ -22,6 +22,16 @@ async function generatePage() {
 
     // Compare Project Name to each JSON block.
     jsonp.forEach(element => {
+        var pnJSON = element["name"].toLowerCase();
+        while (true) {
+            if (pnJSON.split(" ").length != 1) {
+                pnJSON = pnJSON.replace(" ", "+");
+                continue;
+            } else {
+                pnJSON = pnJSON.trim();
+                break;
+            }
+        }
         if (element["name"].toLowerCase().replace(" ", "+") == projectName) {
             // Do DOM stuff.
             // Place title
