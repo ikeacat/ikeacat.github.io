@@ -1,17 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap');
-
-@font-face {
-	font-family: "SanFranciscoBlack";
-	src: url("fonts/SF-Pro-Display-Black.otf");
-}
-
-@font-face {
-	font-family: "SanFrancisco";
-	src: url("fonts/SF-Pro-Display-Regular.otf");
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap');
 
 .robotoBlack {
 	font-family: "Roboto", sans-serif;
+	font-weight:900;
 }
 
 #titlebar {
@@ -27,7 +19,8 @@
 }
 
 .robotoFont {
-	font-family: "SanFrancisco" ,"Roboto", sans-serif;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
 }
 /* Old button
 .neubutton {
@@ -88,7 +81,7 @@
 
 .ikeacattitle {
 	position: static;
-	font-family: "Inconsolata", sans-serif;
+	font-family: "Inconsolata", "Roboto", sans-serif !important;
 }
 
 .projects {
@@ -112,7 +105,8 @@
 
 .projectstitle {
 	font-size: 60px;
-	font-family: "SanFranciscoBlack", "Roboto", sans-serif;
+	font-family: "Roboto", sans-serif;
+	font-weight: 900;
 }
 .projectstitle.bigger {
 	font-size: 100px !important;
