@@ -1,6 +1,6 @@
 async function generateTiles() {
     // Get JSON file.
-    var jsonFile = await getFile('https://raw.githubusercontent.com/ikeacat/ikeacat.github.io/wip-dynamic/json/projectInfo.json');
+    var jsonFile = await getFile('https://raw.githubusercontent.com/ikeacat/ikeacat.github.io/master/json/projectInfo.json');
     var jsonp = JSON.parse(jsonFile);
 
     var rp;

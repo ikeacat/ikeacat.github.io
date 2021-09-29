@@ -3,7 +3,7 @@
 async function generatePage() {
     document.body.classList.add("hb")
     // Get JSON
-    var jsonfile = await getFile('https://raw.githubusercontent.com/ikeacat/ikeacat.github.io/wip-dynamic/json/projectInfo.json');
+    var jsonfile = await getFile('https://raw.githubusercontent.com/ikeacat/ikeacat.github.io/master/json/projectInfo.json');
     var jsonp = JSON.parse(jsonfile);
 
     // Get Project Name.
@@ -45,7 +45,7 @@ async function generatePage() {
             // Place title
             document.getElementsByClassName("bigtitle")[0].innerHTML = element["name"];
             if (element["headerImage"]["enabled"]) {
-                document.getElementsByClassName("imgNameComposite")[0].innerHTML = "<img src='https://raw.githubusercontent.com/ikeacat/ikeacat.github.io/wip-dynamic/" + element["headerImage"]["link"] + "' id='headimg' />" + document.getElementsByClassName("imgNameComposite")[0].innerHTML;
+                document.getElementsByClassName("imgNameComposite")[0].innerHTML = "<img src='https://raw.githubusercontent.com/ikeacat/ikeacat.github.io/master/" + element["headerImage"]["link"] + "' id='headimg' />" + document.getElementsByClassName("imgNameComposite")[0].innerHTML;
                 if (element["headerImage"]["extraCSS"] != "" && typeof element["headerImage"]["extraCSS"] == 'string') {
                     var spl = element["headerImage"]["extraCSS"].split(" ")
                     var ll;
@@ -73,7 +73,7 @@ async function generatePage() {
                 document.getElementsByClassName("imagesRow")[0].innerHTML += "No images avaliable";
             } else {
                 for (var i = 0; i < element["images"].length; i++) {
-                    document.getElementsByClassName("imagesRow")[0].innerHTML += "<img src='https://raw.githubusercontent.com/ikeacat/ikeacat.github.io/wip-dynamic/" + element["imagesRoot"] + element["images"][i] + "' class='projectImages' />";
+                    document.getElementsByClassName("imagesRow")[0].innerHTML += "<img src='https://raw.githubusercontent.com/ikeacat/ikeacat.github.io/master/" + element["imagesRoot"] + element["images"][i] + "' class='projectImages' />";
                 }
             }
 
@@ -113,9 +113,9 @@ async function generatePage() {
                     var imgpath = element["externalLinks"][i]["image"];
                     var bld;
                     if (typeof element["externalLinks"][i]["cssClass"] == 'undefined' || element["externalLinks"][i]["cssClass"] == "") {
-                        bld = "<a href='" + element["externalLinks"][i]["href"] + "'><img src='https://raw.githubusercontent.com/ikeacat/ikeacat.github.io/wip-dynamic/" + imgpath + "' /></a>";
+                        bld = "<a href='" + element["externalLinks"][i]["href"] + "'><img src='https://raw.githubusercontent.com/ikeacat/ikeacat.github.io/master/" + imgpath + "' /></a>";
                     } else {
-                        bld = "<a href='" + element["externalLinks"][i]["href"] + "'><img src='https://raw.githubusercontent.com/ikeacat/ikeacat.github.io/wip-dynamic/" + imgpath + "' class='" + element["externalLinks"][i]["cssClass"] + "'/></a>";
+                        bld = "<a href='" + element["externalLinks"][i]["href"] + "'><img src='https://raw.githubusercontent.com/ikeacat/ikeacat.github.io/master/" + imgpath + "' class='" + element["externalLinks"][i]["cssClass"] + "'/></a>";
                     }
                     document.getElementById('externalColumn').innerHTML += bld;
                 }
