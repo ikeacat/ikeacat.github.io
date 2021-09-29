@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="../thestyle.css" rel="stylesheet" />
+    <link rel="icon" href='../favicon.ico' type='image/ico'>
+    <meta name="igi-pagetype" content="project">
+</head>
+
+<body class="robotoFont">
+    <div class="loadingsheet">
+        <p id="indTxt">Loading page...</p>
+    </div>
+    <script defer src="../js/ikea.js"></script>
+    <script defer src='../js/headselect.js'></script>
+    <script src='../js/generatePage.js'></script>
+    <div class="topbar">
+        <h1 class="ikeacattitle">ikeacat.</h1>
+        <div class="topnav">
+            <button class="neubutton" onclick="toHomepage()">Homepage</button>
+        </div>
+        <hr class="topnavdiv">
+    </div>
+    <div class='bgimg solidcolor' id='projbgcolor'></div>
+    <div id='title'>
+        <div class='imgNameComposite'>
+            <h1 class='bigtitle'></h1>
+        </div>
+        <h2 id='randomHeadline'></h2>
+    </div>
+    <hr class="topnavdiv">
+    <h1 class='projectSubheads'>About</h1>
+    <h3 id="pjstatus"></h3>
+    <h3 id="pjdesc"></h3>
+    <hr class="topnavdiv">
+    <h1 class='projectSubheads'>Images</h1>
+    <div class="projectPageFlexRow imagesRow"></div>
+    <hr class="topnavdiv">
+    <h1 class='projectSubheads'>Languages</h1>
+    <div class='langrow'></div>
+    <hr class="topnavdiv">
+    <div id='externalColumn'>
+    </div>
+    <!--<br><br <hr class="topnavdiv">    >-->
+    <h4>Made with &lt3 by ikeacat. :]</h4>
+</body>
+
+</html>

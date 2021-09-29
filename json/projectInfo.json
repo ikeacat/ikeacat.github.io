@@ -1,0 +1,173 @@
+[
+    {
+        "name": "Crawler",
+        "desc": "A game about crime 'n stuff",
+        "enabled": true,
+        "status": "paused",
+        "headerImage": {
+            "enabled": false,
+            "link": "",
+            "extraCSS": ""
+        },
+        "imagesRoot": "pics/crawler/",
+        "images": [
+            "homepage1.png",
+            "homepage2.png",
+            "homeScreen.png"
+        ],
+        "languages": [
+            "javascript",
+            "css",
+            "html"
+        ],
+        "externalLinks": [
+            {
+                "image": "pics/GitHub-Mark.png",
+                "href": "https://github.com/ikeacat/crawler",
+                "cssClass": "githubmark"
+            },
+            {
+                "image": "pics/GithubPages.svg",
+                "href": "https://ikeacat.github.io/crawler",
+                "cssClass": "githubPagesMark"
+            }
+        ]
+    },
+    {
+        "name": "DuelBot",
+        "desc": "A Discord Bot where you can duel friends.",
+        "enabled": true,
+        "status": "paused",
+        "headerImage": {
+            "enabled": false,
+            "link": "",
+            "extraCSS": ""
+        },
+        "imagesRoot": "pics/duelbot/",
+        "images": [
+            "helpembed.PNG",
+            "duelembed.PNG"
+        ],
+        "languages": [
+            "javascript"
+        ],
+        "externalLinks": []
+    },
+    {
+        "name": "ikeacat.github.io",
+        "desc": "The website you are on right now.",
+        "enabled": true,
+        "status": "inprogress",
+        "headerImage": {
+            "enabled": true,
+            "link": "pics/profilepic.png",
+            "extraCSS": "profilepic"
+        },
+        "imagesRoot": "pics/igi/",
+        "images": [
+            "homepage.png",
+            "crawlerproject.png"
+        ],
+        "languages": [
+            "html",
+            "css",
+            "javascript"
+        ],
+        "externalLinks": [
+            {
+                "image": "pics/GitHub-Mark.png",
+                "href": "https://github.com/ikeacat/ikeacat.github.io",
+                "cssClass": "githubmark"
+            }
+        ]
+    },
+    {
+        "name": "Lemonade Stand",
+        "desc": "A game based off Apple's lemonade stand, but modern looking and with more things (and on the web).",
+        "enabled": true,
+        "status": "paused",
+        "headerImage": {
+            "enabled": false
+        },
+        "imagesRoot": "pics/lemonadestand/",
+        "images": [
+            "homepage.png",
+            "homescreen.png",
+            "newday.png"
+        ],
+        "languages": [
+            "javascript",
+            "css",
+            "html"
+        ],
+        "externalLinks": [
+            {
+                "image": "pics/GitHub-Mark.png",
+                "href": "https://github.com/ikeacat/JSLemonadeStand",
+                "cssClass": "githubmark"
+            },
+            {
+                "image": "pics/GithubPages.svg",
+                "href": "https://ikeacat.github.io/JSLemonadeStand",
+                "cssClass": "githubPagesMark"
+            }
+        ]
+    },
+    {
+        "name": "PyHack",
+        "desc": "A game that I dont know what direction is going to be yet.",
+        "enabled": true,
+        "status": "final",
+        "headerImage": {
+            "enabled": false
+        },
+        "imagesRoot": "pics/pyhack/",
+        "images": [
+            "homepage.png",
+            "missions.png",
+            "smackardbell.png",
+            "terminal.png"
+        ],
+        "languages": [
+            "python",
+            "javascript",
+            "css",
+            "html"
+        ],
+        "externalLinks": [
+            {
+                "image": "pics/GitHub-Mark.png",
+                "href": "https://github.com/ikeacat/pyhackweb",
+                "cssClass": "githubmark"
+            },
+            {
+                "image": "pics/GithubPages.svg",
+                "href": "https://ikeacat.github.io/pyhackweb",
+                "cssClass": "githubPagesMark"
+            }
+        ]
+    },
+    {
+        "name": "SCPAccess",
+        "desc": "An iOS app that provides easy documentation to iPhone users.",
+        "enabled": true,
+        "status": "final",
+        "headerImage": {
+            "enabled": true,
+            "link": "pics/SCPBlack.svg",
+            "extraCSS": "profilepic SCP-extraHeight"
+        },
+        "imagesRoot": "",
+        "images": [],
+        "languages": [
+            "swift"
+        ],
+        "externalLinks": [
+            {
+                "image": "pics/GitHub-Mark.png",
+                "href": "https://github.com/ikeacat/SCPAccess",
+                "cssClass": "githubmark"
+            }
+        ]
+    }
+]

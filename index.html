@@ -1,42 +1,37 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
-		<link href="thestyle.css" rel="stylesheet" />
-		<title>ikeacat.</title>
-		<link rel="icon" href='favicon.ico' type='image/ico'>
-		<meta name="igi-pagetype" content="homepage">
-	</head>
-	<body class="robotoFont">
-		<script defer src="ikea.js"></script>
-		<script defer src='headselect.js'></script>
-		<div class="topbar">
-			<h1 class="ikeacattitle">ikeacat.</h1>
-			<div class="topnav">
-				<button class="neubutton" onclick="toProjects()">Projects</button>
-				<button class="neubutton" onclick="toSocials()">Socials</button>
-			</div>
-			<hr class="topnavdiv">
-		</div>
-		<div class='bgimg'></div>
-		<div id='title'>
-			<div class='imgNameComposite'><img src='pics/profilepic.png' id='profilepic'><h1 class='bigtitle'>ikeacat.</h1></div>
-			<h2 id='randomHeadline'></h2>
+
+<head>
+	<link href="thestyle.css" rel="stylesheet" />
+	<title>ikeacat.</title>
+	<link rel="icon" href='favicon.ico' type='image/ico'>
+	<meta name="igi-pagetype" content="homepage">
+</head>
+
+<body class="robotoFont">
+	<script defer src="js/ikea.js"></script>
+	<script defer src='js/headselect.js'></script>
+	<script src='js/generateTile.js'></script>
+	<div class="topbar">
+		<h1 class="ikeacattitle">ikeacat.</h1>
+		<div class="topnav">
+			<button class="neubutton" onclick="toProjects()">Projects</button>
+			<button class="neubutton" onclick="toSocials()">Socials</button>
 		</div>
 		<hr class="topnavdiv">
-		<a name="projects"></a>
-		<div class="projects">
-			<h1 class="projectstitle bigger">Projects.</h1>
-			<div class='rowWrapFlex'>
-				<a href='projects/Crawler.html'><div class="projectItem"><h1>Crawler</h1><p class='projectDesc'>A game about crime 'n stuff.</p><div class='indicator-lang-row'><span class='indicator paused'>Paused</span><span class='lang javascript block hsml first'></span><span class='lang css block hsml notfirst'></span><span class='lang html block hsml notfirst'></span></div></div></a>
-				<a href='projects/Duelbot.html'><div class='projectItem'><h1>DuelBot</h1><p class='projectDesc'>A Discord Bot where you can duel your friends.</p><div class='indicator-lang-row'><span class='indicator paused'>Paused</span><span class='lang javascript block hsml first'></span></div></div></a>
-				<a href='projects/ikeacat-github-io.html'><div class='projectItem'><h1>ikeacat.github.io</h1><p class='projectDesc'>The website you are on right now.</p><div class='indicator-lang-row'><span class='indicator inprogress'>In Progress</span><span class='lang html block hsml first'></span><span class='lang css block hsml notfirst'></span><span class='lang javascript block hsml notfirst'></span></div></div></a>
-				<!-- <a href='projects/imacow.html'><div class='projectItem'><h1>imacow</h1><p class='projectDesc'>I really dont know what this was for. This was made YEARS ago.</p><div class='indicator-lang-row'><span class='indicator final'>Final (Discontinued)</span><span class='lang html block hsml first'></span><span class='lang javascript block hsml notfirst'></span></div></div></a> !-->
-				<a href='projects/LemonadeStand.html'><div class='projectItem'><h1>Lemonade Stand</h1><p class='projectDesc'>A game based off Apple's lemonade stand, but modern looking and more things (and on the web).</p><div class='indicator-lang-row'><span class='indicator paused'>Paused</span><span class='lang javascript block hsml first'></span><span class='lang css block hsml notfirst'></span><span class='lang html block hsml notfirst'></span></div></div></a>
-				<a href='projects/PyHack.html'><div class='projectItem'><h1>PyHack</h1><p class='projectDesc'>A game that I dont know what direction is going to be yet.</p><div class='indicator-lang-row'><span class='indicator inprogress'>In Progress</span><span class='lang python block hsml first'></span><span class='lang javascript block hsml notfirst'></span><span class='lang css block hsml notfirst'></span><span class='lang html block hsml notfirst'></span></div></div></a>
-				<a href='projects/SCPAccess.html'><div class='projectItem'><h1>SCPAccess</h1><p class='projectDesc'>An iOS app that provides easy documentation to iPhone users.</p><div class='indicator-lang-row'><span class='indicator inprogress'>In Progress</span><span class='lang swift block hsml first'></span></div></div></a>
-				<a href='projects/SlothTeam.html'><div class='projectItem'><h1>Sloth Team</h1><p class='projectDesc'>A website for my old friend group.</p><div class='indicator-lang-row'><span class='indicator final'>Final (Discontinued)</span><span class='lang html block hsml first'></span><span class='lang javascript block hsml notfirst'></span></div></div></a>
-			</div>
+	</div>
+	<div class='bgimg'></div>
+	<div id='title'>
+		<div class='imgNameComposite'><img src='pics/profilepic.png' id='profilepic'>
+			<h1 class='bigtitle'>ikeacat.</h1>
+		</div>
+		<h2 id='randomHeadline'></h2>
+	</div>
+	<hr class="topnavdiv">
+	<a name="projects"></a>
+	<div class="projects">
+		<h1 class="projectstitle bigger">Projects.</h1>
+		<div class='rowWrapFlex' id='pjContainer'></div>
 		<br>
 		<hr class="topnavdiv">
 		<a name="socials"></a>
@@ -45,12 +40,16 @@
 			<h3>Follow me on these thingys</h3>
 			<h6><i>(Click on the images to go to those sites)</i></h6>
 			<div class="flexsocials">
-				<a href='https://github.com/ikeacat'><img src='pics/GitHub-Mark.png' class='socialgithub' style='height:100px;'/></a>
-				<a href='https://twitter.com/masonisntmyname'><img src='pics/Twitter-Mark-Circle.png' class='socialgithub' style='margin-left:15px; height:100px;'/></a>
-				<a href='https://instagram.com/masonisntmyname'><img src='pics/glyph-logo_May2016.png' class='socialgithub' style='margin-left:15px; height: 100px;' /></a>
+				<a href='https://github.com/ikeacat'><img src='pics/GitHub-Mark.png' class='socialgithub'
+						style='height:100px;' /></a>
+				<a href='https://twitter.com/masonisntmyname'><img src='pics/Twitter-Mark-Circle.png'
+						class='socialgithub' style='margin-left:15px; height:100px;' /></a>
+				<a href='https://instagram.com/masonisntmyname'><img src='pics/glyph-logo_May2016.png'
+						class='socialgithub' style='margin-left:15px; height: 100px;' /></a>
 			</div>
 		</div>
 		<hr class="topnavdiv">
 		<h4>Powered by Hypertext Markup Language || Made with love by ikeacat.</h4>
-	</body>
+</body>
+
 </html>

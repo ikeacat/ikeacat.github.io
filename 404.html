@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
-		<link href="thestyle.css" rel="stylesheet" />
-		<title>ikeacat.</title>
-		<link rel="icon" href='favicon.ico' type='image/ico'>
-	</head>
-	<body class="robotoFont noOverflow" onload='headlineGetter(0)'>
-		<script src="ikea.js"></script>
-		<script src='headselect.js'></script>
-		<div class="topbar">
-			<h1 class="ikeacattitle">ikeacat.</h1>
-			<div class="topnav">
-				<button class='neubutton' onclick='toHomepage()'>Homepage</button>
-			</div>
-			<hr class="topnavdiv">
-		</div>
-		<div class='bgimg'></div>
-		<div id='title'>
-			<div class='imgNameComposite'><img src='pics/profilepic.png' id='profilepic'><h1 class='bigtitle'>ikeacat.</h1></div>
-			<h2 id='randomHeadline'></h2>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
+	<link href="thestyle.css" rel="stylesheet" />
+	<title>ikeacat.</title>
+	<link rel="icon" href='favicon.ico' type='image/ico'>
+</head>
+
+<body class="robotoFont noOverflow" onload='headlineGetter(0)'>
+	<script src="js/ikea.js"></script>
+	<script src='js/headselect.js'></script>
+	<div class="topbar">
+		<h1 class="ikeacattitle">ikeacat.</h1>
+		<div class="topnav">
+			<button class='neubutton' onclick='toHomepage()'>Homepage</button>
 		</div>
 		<hr class="topnavdiv">
-		<div class='the404centerflex'>
-            <h1 class='the404title'>404.</h1>
-            <p>whoops. this page doesnt exist. try not to come here again. click the homepage button to fix our or your mistake.</p>
-        </div>
-	</body>
+	</div>
+	<div class='bgimg'></div>
+	<div id='title'>
+		<div class='imgNameComposite'><img src='pics/profilepic.png' id='profilepic'>
+			<h1 class='bigtitle'>ikeacat.</h1>
+		</div>
+		<h2 id='randomHeadline'></h2>
+	</div>
+	<hr class="topnavdiv">
+	<div class='the404centerflex'>
+		<h1 class='the404title'>404.</h1>
+		<p>whoops. this page doesnt exist. try not to come here again. click the homepage button to fix our or your
+			mistake.</p>
+	</div>
+</body>
+
 </html>
