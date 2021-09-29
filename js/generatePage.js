@@ -35,6 +35,10 @@ async function generatePage() {
             }
         }
         if (element["name"].toLowerCase().replace(" ", "+") == projectName) {
+            if (!element["enabled"]) {
+                lsFatal("Could not generate page for some reason. Try again later.")
+                return;
+            }
             didFindProjectName = true;
 
             // Do DOM stuff.
