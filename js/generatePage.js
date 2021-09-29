@@ -1,6 +1,7 @@
 'use strict';
 
 async function generatePage() {
+    document.body.classList.add("hb")
     // Get JSON
     var jsonfile = await getFile('https://raw.githubusercontent.com/ikeacat/ikeacat.github.io/wip-dynamic/json/projectInfo.json');
     var jsonp = JSON.parse(jsonfile);
@@ -17,9 +18,10 @@ async function generatePage() {
         }
     });
     if (typeof projectName === 'undefined') {
+        lsFatal("Defined project could not be found.")
         throw new Error("Project name undefined.")
     }
-
+    var didFindProjectName = false;
     // Compare Project Name to each JSON block.
     jsonp.forEach(element => {
         var pnJSON = element["name"].toLowerCase();
@@ -33,6 +35,8 @@ async function generatePage() {
             }
         }
         if (element["name"].toLowerCase().replace(" ", "+") == projectName) {
+            didFindProjectName = true;
+
             // Do DOM stuff.
             // Place title
             document.getElementsByClassName("bigtitle")[0].innerHTML = element["name"];
@@ -116,6 +120,25 @@ async function generatePage() {
         }
     });
 
+    if (!didFindProjectName) {
+        lsFatal("Could not generate page for some reason. Try again later.");
+        return;
+    }
+
+    document.getElementsByClassName("loadingsheet")[0].animate([
+        { opacity: '100%' },
+        { opacity: '0%' }
+    ], { duration: 200, iterations: 1 }).onfinish = function () {
+        document.body.removeChild(document.getElementsByClassName("loadingsheet")[0]);
+        document.body.classList.remove("hb");
+    };
+
+}
+
+function lsFatal(indMessage) {
+    document.getElementsByClassName("loadingsheet")[0].classList.add("fatal");
+    document.getElementById("indTxt").innerHTML = indMessage;
+    document.getElementsByClassName("loadingsheet")[0].innerHTML += "<a href='../index.html' class='fatalHomeLink'>Home</a>";
 }
 
 async function getFile(url) {

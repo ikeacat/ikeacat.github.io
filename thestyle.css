@@ -242,7 +242,7 @@ hr {
 
 .projectPageTitle {
 	font-size: 80px;
-	font-family: "SanFranciscoBlack", "Roboto", sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 .projectPageFlexRow {
@@ -421,10 +421,6 @@ body {
 	margin-bottom: 8px;
 }
 
-.SanFranciscoBlack {
-	font-family: "SanFranciscoBlack", "Roboto", sans-serif;
-}
-
 .indicator-lang-row {
 	display: flex;
 	flex-direction: row;
@@ -435,7 +431,7 @@ body {
 	font-size: 68px;
 	margin-bottom: 10px;
 	margin-top: 15px;
-	font-family: "SanFrancisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	text-decoration: underline;
 	text-decoration-style: double;
 	text-decoration-thickness: 2px;
@@ -448,4 +444,48 @@ body {
 
 .SCP-extraHeight {
 	height: 200px;
+}
+
+.loadingsheet {
+	background-color: whitesmoke;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+	z-index: 100;
+	margin: 0;
+	padding: 10px;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: black;
+	animation: transOut 2s linear 1s 1;
+	animation-play-state: paused;
+}
+.loadingsheet.fatal {
+	background-color: red;
+	color: white;
+}
+
+@keyframes transOut {
+	0% { opacity: 100%; }
+	100% {opacity: 0%;}
+}
+
+.hb {
+	overflow: hidden;
+	margin: 0;
+}
+
+#indTxt {
+	font-size: 30px;
+	font-family: "Roboto", "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+.fatalHomeLink {
+	text-decoration: underline;
+	font-size:30px;
+	font-family: "Roboto", "Helvetica Neue", "Helvetica", sans-serif;
 }
