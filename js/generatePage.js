@@ -44,6 +44,7 @@ async function generatePage() {
             // Do DOM stuff.
             // Place title
             document.getElementsByClassName("bigtitle")[0].innerHTML = element["name"];
+            document.title = element["name"] + " - ikeacat.";
             if (element["headerImage"]["enabled"]) {
                 document.getElementsByClassName("imgNameComposite")[0].innerHTML = "<img src='https://raw.githubusercontent.com/ikeacat/ikeacat.github.io/master/" + element["headerImage"]["link"] + "' id='headimg' />" + document.getElementsByClassName("imgNameComposite")[0].innerHTML;
                 if (element["headerImage"]["extraCSS"] != "" && typeof element["headerImage"]["extraCSS"] == 'string') {
