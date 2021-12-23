@@ -173,7 +173,7 @@
     {
         "name": "Stated",
         "desc": "A cool iOS client for NationStates",
-        "enabled": false,
+        "enabled": true,
         "status": "final",
         "headerImage": {
             "enabled": false
